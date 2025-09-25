@@ -17,5 +17,14 @@ data class DollarEntity(
     @ColumnInfo(name = "dollar_parallel")
     var dollarParallel: String? = null,
 
+    @ColumnInfo(name = "usdt")
+    var usdt: String? = null,
+
+    @ColumnInfo(name = "usdc")
+    var usdc: String? = null,
+
+    @ColumnInfo(name = "updatedAt")
+    var updatedAt: String? = null,
+
     @ColumnInfo(name = "timestamp")
     var timestamp: Long = 0)

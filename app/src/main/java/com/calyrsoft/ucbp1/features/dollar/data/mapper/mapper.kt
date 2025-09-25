@@ -6,13 +6,21 @@ import com.calyrsoft.ucbp1.features.dollar.domain.model.DollarModel
 fun DollarEntity.toModel() : DollarModel {
     return DollarModel(
         dollarOfficial = dollarOfficial,
-        dollarParallel = dollarParallel
+        dollarParallel = dollarParallel,
+        usdt = usdt,
+        usdc = usdc,
+        updatedAt = updatedAt,
+        timestamp = timestamp
     )
 }
 
 fun DollarModel.toEntity() : DollarEntity {
     return DollarEntity(
         dollarOfficial = dollarOfficial,
-        dollarParallel = dollarParallel)
+        dollarParallel = dollarParallel,
+        usdt = usdt,
+        usdc = usdc,
+        updatedAt = updatedAt,
+        timestamp = timestamp ?: System.currentTimeMillis())
 }
 
