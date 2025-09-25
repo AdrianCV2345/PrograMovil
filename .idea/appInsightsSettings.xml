@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.calyrsoft.ucbp1" />
+                  <option name="mobileSdkAppId" value="1:427806254005:android:9e959b01d73336d933effc" />
+                  <option name="projectId" value="ucbtry1" />
+                  <option name="projectNumber" value="427806254005" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
