@@ -22,7 +22,9 @@ class PopularMoviesViewModel(
 
     private val _state = MutableStateFlow<UiState>(UiState.Loading)
     val state: StateFlow<UiState> = _state.asStateFlow()
-
+    init {
+        fetchPopularMovies()
+    }
     fun fetchPopularMovies() {
         viewModelScope.launch(Dispatchers.IO) {
             _state.value = UiState.Loading

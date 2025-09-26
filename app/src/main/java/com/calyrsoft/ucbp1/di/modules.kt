@@ -103,7 +103,7 @@ val appModule = module {
         get<Retrofit>(named(NetworkConstants.RETROFIT_MOVIE)).create(MovieService::class.java)
     }
     single { MovieRemoteDataSource(get(), get(named("apiKey"))) }
-    single<IMoviesRepository> { MovieRepository(get()) }
+    ///single<IMoviesRepository> { MovieRepository(get()) }
     factory { FetchPopularMoviesUseCase(get()) }
     viewModel{ PopularMoviesViewModel(get()) }
 }
